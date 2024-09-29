@@ -1,1 +1,10 @@
-
+pipeline {
+    agent any
+    stages {
+        stage('Clone repository') {
+            steps {
+                git 'https://github.com/<your-repo>/index-page-project.git'
+            }
+        }
+    }
+}
